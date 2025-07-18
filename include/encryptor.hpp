@@ -3,15 +3,16 @@
 
 #include <string>
 
-using namespace std;
 
 class Encryptor {
 public:
+    Encryptor() = default;
+
     explicit Encryptor(uint32_t key);
 
-    string encrypt(const string& plainText);
+    std::string encrypt(const std::string& plainText, uint32_t key);
 
-    string decrypt(const string& cipherText);
+    std::string decrypt(const std::string& cipherText, uint32_t key);
 
 private:
     uint32_t roundFunction(uint32_t halfBlock, uint32_t key);
