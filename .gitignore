@@ -1,0 +1,13 @@
+# Ignore build artifacts
+/build/
+/*.exe
+/*.obj
+/*.pdb
+
+# Ignore VSCode settings folder
+.vscode/
+
+# Ignore other system files
+*.log
+*.user
+*.suo
